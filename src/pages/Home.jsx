@@ -4,7 +4,7 @@ import Search from '../component/Search';
 import PropertList from '../component/PropertList';
 import PropertyType from '../component/PropertyType';
 import PropertyAgent from '../component/PropertyAgent';
-import Testimonial from './Testimonial';
+import ClientTestimonial from '../component/ClientTestimonial';
 
 function Home() {
   return (
@@ -96,7 +96,7 @@ function Home() {
 
 
         {/* <!-- Testimonial Start --> */}
-        <Testimonial></Testimonial>
+        <ClientTestimonial></ClientTestimonial>
         {/* <!-- Testimonial End --> */}
         
 
