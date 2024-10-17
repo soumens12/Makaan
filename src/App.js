@@ -12,7 +12,9 @@ import PropertytypePage from './pages/PropertytypePage';
 import PropertyagentPage from './pages/PropertyagentPage';
 import NotFound from './pages/NotFound';
 
+
 function App() {
+  
   
 
   return (

@@ -3,7 +3,11 @@ import Breadcrumbs from '../component/Breadcrumbs';
 import PropertyType from '../component/PropertyType';
 import Search from '../component/Search';
 
+
 function PropertytypePage() {
+  
+  
+
   return (
     <div>
         <div className="container-xxl bg-white p-0">
@@ -12,7 +16,9 @@ function PropertytypePage() {
             {/* <!-- Header End --> */}
             
             <Search></Search>
+
             <PropertyType></PropertyType>
+
         </div>
     </div>
   )

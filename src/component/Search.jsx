@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Search() {
+
+
   return (
     <div>
         <div class="container-fluid bg-primary wow fadeIn" data-wow-delay="0.1s" style={{padding: "35px"}}>
@@ -9,9 +11,10 @@ function Search() {
                         <div class="col-md-10">
                             <div class="row g-2">
                                 <div class="col-md-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword"/>
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword" />
                                 </div>
                                 <div class="col-md-4">
+                                  
                                     <select class="form-select border-0 py-3">
                                         <option selected>Property Type</option>
                                         <option value="1">Property Type 1</option>

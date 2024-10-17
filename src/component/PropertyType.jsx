@@ -1,4 +1,17 @@
 import React from 'react'
+import PropertyCard from './PropertyCard';
+
+const cardData = [
+    {title: 'Apartment', description: '123 Properties', image: 'assets/img/icon-apartment.png' },
+    {title: 'Villa', description: '1234 Properties', image: 'assets/img/icon-villa.png' },
+    {title: 'Home', description: '12 Properties', image: 'assets/img/icon-house.png' },
+    {title: 'Office', description: '12 Properties', image: 'assets/img/icon-housing.png' },
+    {title: 'Building', description: '12 Properties', image: 'assets/img/icon-building.png' },
+    {title: 'Townhouse', description: '12 Properties', image: 'assets/img/icon-neighborhood.png' },
+    {title: 'Shop', description: '12 Properties', image: 'assets/img/icon-condominium.png' },
+    {title: 'Garage', description: '12 Properties', image: 'assets/img/icon-luxury.png' },
+    
+  ];
 
 function PropertyType() {
   return (
@@ -10,94 +23,10 @@ function PropertyType() {
                     <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-apartment.png" alt="Icon" />
-                                </div>
-                                <h6>Apartment</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-villa.png" alt="Icon" />
-                                </div>
-                                <h6>Villa</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-house.png" alt="Icon" />
-                                </div>
-                                <h6>Home</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-housing.png" alt="Icon" />
-                                </div>
-                                <h6>Office</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-building.png" alt="Icon" />
-                                </div>
-                                <h6>Building</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-neighborhood.png" alt="Icon" />
-                                </div>
-                                <h6>Townhouse</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-condominium.png" alt="Icon" />
-                                </div>
-                                <h6>Shop</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a className="cat-item d-block bg-light text-center rounded p-3" href="/">
-                            <div className="rounded p-4">
-                                <div className="icon mb-3">
-                                    <img className="img-fluid" src="assets/img/icon-luxury.png" alt="Icon" />
-                                </div>
-                                <h6>Garage</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
+                    
+                        {cardData.map((card) => (
+                        <PropertyCard imgTitle={card.title} imgDesc={card.description} imgSrc={card.image} />
+                        ))}
                 </div>
             </div>
         </div>
