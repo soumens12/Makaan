@@ -5,6 +5,7 @@ function Search() {
 
   return (
     <div>
+        
         <div className="container-fluid bg-primary wow fadeIn" data-wow-delay="0.1s" style={{padding: "35px"}}>
                 <div className="container">
                     <div className="row g-2">

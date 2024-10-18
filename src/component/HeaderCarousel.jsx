@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import carousel1 from './carousel-1.jpg';
 import carousel2 from './carousel-2.jpg';
 
-import './HeaderCarousel.css'
+import './HeaderCarousel.css';
 
 function HeaderCarousel() {
   return (

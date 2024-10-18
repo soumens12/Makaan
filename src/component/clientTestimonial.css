@@ -4,8 +4,7 @@
     --light: #EFFDF5;
     --dark: #0E2E50;
 }
-
-.header-carousel .owl-nav {
+.testimonial-carousel .owl-nav {
     position: absolute;
     top: 50%;
     left: -25px;
@@ -14,8 +13,8 @@
     flex-direction: column;
 }
 
-.header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
     margin: 7px 0;
     width: 50px;
     height: 50px;
@@ -29,13 +28,13 @@
     transition: .5s;
 }
 
-.header-carousel .owl-nav .owl-prev:hover,
-.header-carousel .owl-nav .owl-next:hover {
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--dark);
 }
 
 @media (max-width: 768px) {
-    .header-carousel .owl-nav {
+    .testimonial-carousel .owl-nav {
         left: 25px;
     }
 }

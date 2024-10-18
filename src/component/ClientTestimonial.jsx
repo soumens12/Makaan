@@ -2,6 +2,7 @@ import React from 'react';
 import OwlCarousel from "react-owl-carousel";
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
+import './clientTestimonial.css';
 import testimonial1 from "../component/testimonial-image/testimonial-1.jpg";
 import testimonial2 from "../component/testimonial-image/testimonial-2.jpg";
 import testimonial3 from "../component/testimonial-image/testimonial-3.jpg";

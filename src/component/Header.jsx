@@ -1,5 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { NavLink } from 'react-router-dom';
+
+import Modal from './Modal';
+
 
 
 function Header() {
@@ -28,6 +31,15 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+  const modalRef = useRef(null);
+  const openModal = () => {
+    const modalElement = modalRef.current;
+    const bootstrapModal = new window.bootstrap.Modal(modalElement);
+    bootstrapModal.show();
+  };
+ 
 
   return (
     <>
@@ -72,12 +84,16 @@ function Header() {
                         
                         <NavLink to="/contact" className={({isActive}) =>isActive ? "nav-item nav-link active" : "nav-item nav-link"}>Contact</NavLink>
                     </div>
-                    <NavLink to="" className="btn btn-primary px-3 d-none d-lg-flex">Add Property</NavLink>
+                    <NavLink to="" className="btn btn-primary px-3 d-none d-lg-flex" onClick={openModal}>Add Property</NavLink>
+                   
                     
                 </div>
             </nav>
         </div>
         {/* <!-- Navbar End --> */}
+
+        {/* Render the Modal component */}
+        <Modal ref={modalRef} />
     </>
   )
 }
