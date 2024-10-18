@@ -23,8 +23,7 @@ function PropertyType() {
                     <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
                 <div className="row g-4">
-                    
-                        {cardData.map((card) => (
+                      {cardData.map((card) => (
                         <PropertyCard imgTitle={card.title} imgDesc={card.description} imgSrc={card.image} />
                         ))}
                 </div>

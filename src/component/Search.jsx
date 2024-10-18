@@ -5,26 +5,26 @@ function Search() {
 
   return (
     <div>
-        <div class="container-fluid bg-primary wow fadeIn" data-wow-delay="0.1s" style={{padding: "35px"}}>
-                <div class="container">
-                    <div class="row g-2">
-                        <div class="col-md-10">
-                            <div class="row g-2">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword" />
+        <div className="container-fluid bg-primary wow fadeIn" data-wow-delay="0.1s" style={{padding: "35px"}}>
+                <div className="container">
+                    <div className="row g-2">
+                        <div className="col-md-10">
+                            <div className="row g-2">
+                                <div className="col-md-4">
+                                    <input type="text" className="form-control border-0 py-3" placeholder="Search Keyword" />
                                 </div>
-                                <div class="col-md-4">
+                                <div className="col-md-4">
                                   
-                                    <select class="form-select border-0 py-3">
-                                        <option selected>Property Type</option>
+                                    <select className="form-select border-0 py-3" defaultValue="Property Type">
+                                        <option>Property Type</option>
                                         <option value="1">Property Type 1</option>
                                         <option value="2">Property Type 2</option>
                                         <option value="3">Property Type 3</option>
                                     </select>
                                 </div>
-                                <div class="col-md-4">
-                                    <select class="form-select border-0 py-3">
-                                        <option selected>Location</option>
+                                <div className="col-md-4">
+                                    <select className="form-select border-0 py-3" defaultValue="Location">
+                                        <option>Location</option>
                                         <option value="1">Location 1</option>
                                         <option value="2">Location 2</option>
                                         <option value="3">Location 3</option>
@@ -32,8 +32,8 @@ function Search() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+                        <div className="col-md-2">
+                            <button className="btn btn-dark border-0 w-100 py-3">Search</button>
                         </div>
                     </div>
                 </div>

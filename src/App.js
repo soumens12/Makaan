@@ -14,7 +14,15 @@ import NotFound from './pages/NotFound';
 
 
 function App() {
-  
+  const Layout = ({ children }) => (
+    <>
+    <div className='container-xxl bg-white p-0'>
+      <Header />
+      {children}
+      <Footer />
+    </div>
+    </>
+  );
   
 
   return (
@@ -86,14 +94,6 @@ function App() {
   );
 };
 
-const Layout = ({ children }) => (
-  <>
-  <div className='container-xxl bg-white p-0'>
-    <Header />
-    {children}
-    <Footer />
-  </div>
-  </>
-);
+
 
 export default App;

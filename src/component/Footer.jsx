@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
-        <div className="container-xxl bg-white p-0">
-            {/* <!-- Footer Start --> */}
+    <>
+        
+        {/* <!-- Footer Start --> */}
         <div className="container-fluid bg-dark text-white-50 footer pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="row g-5">
@@ -81,8 +81,8 @@ function Footer() {
             </div>
         </div>
         {/* <!-- Footer End --> */}
-        </div>
-    </div>
+        
+    </>
   )
 }
 

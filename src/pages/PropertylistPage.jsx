@@ -5,8 +5,7 @@ import Search from '../component/Search';
 
 function PropertylistPage() {
   return (
-    <div>
-        <div className="container-xxl bg-white p-0">
+    <>
             {/* <!-- Header Start --> */}
             <Breadcrumbs page="Property List" title="Property List"></Breadcrumbs>
             {/* <!-- Header End --> */}
@@ -14,9 +13,8 @@ function PropertylistPage() {
             <Search></Search>
 
             <PropertList></PropertList>
-        </div>
         
-    </div>
+    </>
   )
 }
 

@@ -8,9 +8,9 @@ import ClientTestimonial from '../component/ClientTestimonial';
 
 function Home() {
   return (
-    <div>
+    <>
         
-        <div className="container-xxl bg-white p-0">
+  
       
              {/* <!-- Header Start --> */}
         <div className="container-fluid header bg-white p-0">
@@ -103,8 +103,8 @@ function Home() {
 
         {/* <!-- Back to Top --> */}
         <a href="/" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
-    </div>
-    </div>
+    
+    </>
   )
 }
 
