@@ -10,7 +10,6 @@ const cardData = [
     {title: 'Townhouse', description: '12 Properties', image: 'assets/img/icon-neighborhood.png' },
     {title: 'Shop', description: '12 Properties', image: 'assets/img/icon-condominium.png' },
     {title: 'Garage', description: '12 Properties', image: 'assets/img/icon-luxury.png' },
-    
   ];
 
 function PropertyType() {
