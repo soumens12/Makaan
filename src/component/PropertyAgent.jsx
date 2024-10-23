@@ -1,4 +1,10 @@
-import React from 'react'
+import React from 'react';
+import PropertyAgentCard from './PropertyAgentCard';
+
+import team1 from "./team/team-1.jpg";
+import team2 from "./team/team-2.jpg";
+import team3 from "./team/team-3.jpg";
+import team4 from "./team/team-4.jpg";
 
 function PropertyAgent() {
   return (
@@ -10,71 +16,10 @@ function PropertyAgent() {
                     <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div className="team-item rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="assets/img/team-1.jpg" alt="" />
-                                <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div className="team-item rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="assets/img/team-2.jpg" alt="" />
-                                <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div className="team-item rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="assets/img/team-3.jpg" alt="" />
-                                <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-facebook-f"></i></a>
-
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div className="team-item rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="assets/img/team-4.jpg" alt="" />
-                                <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square mx-1" href="/"><i className="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div className="text-center p-4 mt-3">
-                                <h5 className="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
+                    <PropertyAgentCard image={team1} title="Team 1" fullname="Full Name" designation="Designer"></PropertyAgentCard>
+                    <PropertyAgentCard image={team2} title="Team 1" fullname="Full Name" designation="Developer"></PropertyAgentCard>
+                    <PropertyAgentCard image={team3} title="Team 1" fullname="Full Name" designation="Designer"></PropertyAgentCard>
+                    <PropertyAgentCard image={team4} title="Team 1" fullname="Full Name" designation="Developer"></PropertyAgentCard>
                 </div>
             </div>
         </div>

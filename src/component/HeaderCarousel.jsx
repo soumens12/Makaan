@@ -7,6 +7,8 @@ import carousel2 from './carousel-2.jpg';
 
 import './HeaderCarousel.css';
 
+
+
 function HeaderCarousel() {
   return (
     <OwlCarousel

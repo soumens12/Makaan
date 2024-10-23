@@ -18,7 +18,9 @@ function App() {
     <>
     <div className='container-xxl bg-white p-0'>
       <Header />
+      <div className='App'>
       {children}
+      </div>
       <Footer />
     </div>
     </>
